@@ -14,7 +14,8 @@ bbb
 
     function createHtml() {
         $.ajax({
-            url: '',
+            url: '${pageContext.request.contextPath}/freemarkerController/creatingFreemarkerHtml',
+        //'${pageContext.request.contextPath}/freemarkerController/creatingFreemarkerHtml',
             data: {key: '123456'},
             type: 'post',
             //dataType: 'text',
